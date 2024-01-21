@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px auto;
+        }
+        
+        .swapper {
+            height: 1089px;
+            width: 800px;
+            background-color: antiquewhite;
+            border: 1px solid black;
+        }
+        
+        .header {
+            height: 150px;
+            width: 800px;
+            background-color: rgb(155, 165, 235);
+            border-bottom: 1px solid black;
+        }
+        
+        .nav {
+            height: 50px;
+            width: 800px;
+            background-color: wheat;
+            border-bottom: 1px solid black;
+        }
+        
+        .content {
+            height: 789px;
+            width: 800px;
+            background-color: rgb(123, 149, 198);
+        }
+        
+        .footer {
+            height: 97px;
+            width: 800px;
+            background-color: cadetblue;
+            border-top: 1px solid black;
+        }
+        
+        .header .p1 {
+            font-size: 40px;
+            color: rgb(153, 56, 72);
+            position: absolute;
+            text-shadow: black 10px 10px 5px;
+            top: 50px;
+            left: 25%;
+        }
+        
+        .header .p2 {
+            font-size: 40px;
+            color: rgb(153, 56, 72);
+            position: absolute;
+            text-shadow: black 10px 10px 5px;
+            top: 50px;
+            right: 25%;
+        }
+        /* .header:hover>p1 {
+            color: blue;
+        } */
+        
+        .menu li {
+            height: 50px;
+            width: 150px;
+            line-height: 50px;
+            text-indent: 10px;
+            float: left;
+            list-style-type: none;
+        }
+        
+        .menu a {
+            color: white;
+            font-size: x-large;
+            text-decoration: none;
+        }
+        
+        .menu li {
+            background-color: rgb(23, 158, 29);
+        }
+        
+        .menu li:hover>a {
+            color: violet;
+            font-style: italic;
+        }
+        
+        .menu li:hover {
+            background-color: rgb(143, 185, 162);
+        }
+        
+        .menu li .sub-menu {
+            display: none;
+            position: relative;
+        }
+        
+        .menu li:hover>.sub-menu {
+            display: block;
+        }
+        
+        .menu li .sub-menu li .sub-menu {
+            display: none;
+        }
+        
+        .menu li .sub-menu li:hover>.sub-menu {
+            display: block;
+            position: absolute;
+            top: 100px;
+            left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swapper">
+        <div class="header">
+            <img src="../anh-bia-10.jpg" alt="" width="1089px" height="150px">
+            <p class="p1">KHOA CNTT</p>
+            <P class="p2">Trung tam tin hoc</P>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">4G</a></li>
+                        <li><a href="#">TAG GAME</a></li>
+                        <li><a href="#">Tivi</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">FPT</a></li>
+                                <li><a href="#">CAP-SG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">HELP</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="aside"></div>
+            <div class="section"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>
